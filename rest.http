@@ -1,0 +1,22 @@
+### GET ALL TODOS
+GET http://localhost:8000/todos HTTP/1.1
+
+### POST A TODO
+POST http://localhost:8000/todos HTTP/1.1
+Content-Type: application/json
+
+{
+    "description": "I am a test 22"
+}
+
+### UPDATE A TODO
+PATCH http://localhost:8000/todos/1624425338 HTTP/1.1
+Content-Type: application/json
+
+{
+    "description": "Updated again 3! Just do it"
+}
+
+### DELETE A TODO
+DELETE http://localhost:8000/todos/1144649218 HTTP/1.1
+
